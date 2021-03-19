@@ -1,4 +1,6 @@
-# A simple but elegant Demo that presents a login flow UI
+# A simple Dashboard UI using React.
+
+This Demo presents a simple but elegant Login page that takes you to the user Dashboard. The UI flow is simple and there is no other logic behind the authentication and/or the dashboard page.
 
 ## Setting up the environment
 
