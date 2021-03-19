@@ -1,8 +1,10 @@
-# Getting Started with Create React App
+# A simple Dashboard UI using React.
+
+This Demo presents a simple but elegant Login page that takes you to the user Dashboard. The UI flow is simple and there is no other logic behind the authentication and/or the dashboard page.
+
+## Setting up the environment
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
 
 In the project directory, you can run:
 
