@@ -1,0 +1,26 @@
+/*
+ * Styles for Login
+ */
+
+ @import '../../styles/base/mixins.scss';
+ @import '../../styles/base/palette.scss';
+
+.demo-login-container {
+  display: flex;
+  flex-direction: row;
+  // background-color: yellowgreen;
+
+  .demo-login-background {
+    > svg {
+      width: 713px;
+      height: 915px;
+    }
+  }
+
+  .demo-login-form {
+    display: flex;
+    justify-content: center;
+    padding: 80px 50px;
+    width: 100%;
+  }
+}
