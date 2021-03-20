@@ -1,0 +1,75 @@
+/*
+ * Styles for Login Form
+ */
+
+ @import '../../../styles/base/mixins';
+ @import '../../../styles/base/palette';
+ @import '../../../styles/base/typography';
+
+.demo-form-container {
+  padding: 50px 100px;
+  width: 50%;
+
+  .demo-login-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 75px;
+
+    .demo-login-header-text {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: $demo-purple;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+    // email label
+    >div:nth-child(1) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    // password label
+    >div:nth-child(3) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      margin-top: 33px;
+    }
+    //forgot password
+    >div:nth-child(6) {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    input {
+      border-radius: 10px;
+      padding: 16px;
+      border: 2px solid $demo-light-gray;
+      color: $demo-purple;
+      :focus {
+        color: $demo-purple;
+      }
+    }
+
+    .demo-form-button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 75px;
+
+      button[type='submit'] {
+        border-radius: 8px;
+        padding: 16px;
+        width: 50%;
+        // margin-top: 25px;
+      }
+    }
+  }
+}
