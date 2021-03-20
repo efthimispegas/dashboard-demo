@@ -1,0 +1,43 @@
+$font: 'Lato', sans-serif;
+
+@mixin font1($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    src: url($font-file + '.ttf') format('truetype');
+  }
+}
+
+@mixin font2($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    src: url($font-file + '.otf') format('truetype');
+  }
+}
+
+@include font1('Product Sans Bold Italic', '../../assets/fonts/product-sans/Product-Sans-Bold-Italic');
+@include font1('Product Sans Bold', '../../assets/fonts/product-sans/Product-Sans-Bold');
+@include font1('Product Sans Regular', '../../assets/fonts/product-sans/Product-Sans-Regular');
+@include font1('Product Sans Italic', '../../assets/fonts/product-sans/Product-Sans-Italic');
+
+@include font2('SF Pro Display Bold', '../../assets/fonts/sf-pro-display/SF-Pro-Display-Bold');
+@include font2('SF Pro Display Bold Italic', '../../assets/fonts/sf-pro-display/SF-Pro-Display-BoldItalic');
+@include font2('SF Pro Display Medium', '../../assets/fonts/sf-pro-display/SF-Pro-Display-Medium');
+@include font2('SF Pro Display Medium Italic', '../../assets/fonts/sf-pro-display/SF-Pro-Display-MediumItalic');
+@include font2('SF Pro Display Regular', '../../assets/fonts/sf-pro-display/SF-Pro-Display-Regular');
+@include font2('SF Pro Display Regular Italic', '../../assets/fonts/sf-pro-display/SF-Pro-Display-RegularItalic');
+
+$ProductSansBoldItalic: 'Product Sans Bold Italic', sans-serif;
+$ProductSansBold: 'Product Sans Bold', sans-serif;
+$ProductSansRegular: 'Product Sans Regular', sans-serif;
+$ProductSansItalic: 'Product Sans Italic', sans-serif;
+
+$SFProDisplayBold: 'SF Pro Display Bold', sans-serif;
+$SFProDisplayBoldItalic: 'SF Pro Display Bold Italic', sans-serif;
+$SFProDisplayMedium: 'SF Pro Display Medium', sans-serif;
+$SFProDisplayMediumItalic: 'SF Pro Display Medium Italic', sans-serif;
+$SFProDisplayRegular: 'SF Pro Display Regular', sans-serif;
+$SFProDisplayRegularItalic: 'SF Pro Display Regular Italic', sans-serif;
