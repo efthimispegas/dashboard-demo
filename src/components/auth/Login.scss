@@ -2,18 +2,53 @@
  * Styles for Login
  */
 
- @import '../../styles/base/mixins.scss';
- @import '../../styles/base/palette.scss';
+ @import '../../styles/base/mixins';
+ @import '../../styles/base/palette';
 
 .demo-login-container {
   display: flex;
   flex-direction: row;
-  // background-color: yellowgreen;
+
+  @include respond(mobile) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+  }
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 
   .demo-login-background {
+    @include respond(tab-port) {
+      display: flex;
+      justify-content: center;
+    }
+
     > svg {
       width: 713px;
       height: 915px;
+
+      @include respond(tab-land) {
+        width: 488px;
+        height: 866px;
+        padding: 0 25px 0 5px;
+      }
+      @include respond(tab-port) {
+        padding: 10px 10px 0 10px;
+        width: 339px;
+        height: 305px;
+      }
+      @include respond(mobile) {
+        position: absolute;
+        top: -9%;
+        left: 18%;
+        width: 66%;
+        height: 350px;
+        z-index: -1;
+      }
     }
   }
 
@@ -22,5 +57,15 @@
     justify-content: center;
     padding: 80px 50px;
     width: 100%;
+
+    @include respond(tab-land) {
+      padding: 70px 10px;
+    }
+    @include respond(tab-port) {
+      padding: 0;
+    }
+    @include respond(mobile) {
+      padding-top: 25px;
+    }
   }
 }
