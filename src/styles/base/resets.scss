@@ -1,0 +1,99 @@
+@import 'styles/base/mixins.scss';
+@import 'styles/base/typography.scss';
+
+h1 {
+  color: $amric-white;
+  font-family: $LatoThin;
+  font-size: 136.66px;
+  letter-spacing: 7.33px;
+  line-height: 175.99px;
+  margin: 0 !important;
+
+  @include respond(mobile) {
+    font-family: $LatoLight;
+    font-size: 70px;
+    letter-spacing: 0;
+    line-height: 84px;
+  }
+}
+
+h2 {
+  color: $amric-black;
+  font-family: $LatoThin;
+  font-size: 73.33px;
+  line-height: 88px;
+  margin: 0 !important;
+
+  @include respond(mobile) {
+    font-family: $LatoLight;
+    font-size: 46.67px;
+    line-height: 56px;
+  }
+}
+
+h3 {
+  color: $amric-white;
+  font-family: $LatoThin;
+  font-size: 66.67px;
+  line-height: 80px;
+  margin: 0 !important;
+
+  @include respond(mobile) {
+    font-family: $LatoLight;
+    font-size: 40.67px;
+    line-height: 56px;
+  }
+}
+
+h4 {
+  color: $amric-white;
+  font-family: $LatoThin;
+  font-size: 35px;
+  line-height: 56px;
+  margin: 0 !important;
+
+  @include respond(mobile) {
+    font-family: $LatoLight;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+h5 {
+  color: $amric-white;
+  font-family: $LatoThin;
+  font-size: 28px;
+  line-height: 48px;
+  margin: 0 !important;
+
+  @include respond(mobile) {
+    font-family: $LatoLight;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+h6 {
+  color: $amric-white;
+  font-family: $LatoThin;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 !important;
+
+  @include respond(mobile) {
+    font-family: $LatoLight;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+p {
+  color: $amric-white;
+  font-family: $LatoRegular;
+  font-size: 16px;
+  margin: 0 !important;
+
+  @include respond(mobile) {
+    font-size: 12px;
+  }
+}
