@@ -1,99 +1,128 @@
-@import 'styles/base/mixins.scss';
-@import 'styles/base/typography.scss';
+@import './mixins';
+@import './typography';
 
 h1 {
-  color: $amric-white;
-  font-family: $LatoThin;
-  font-size: 136.66px;
-  letter-spacing: 7.33px;
-  line-height: 175.99px;
+  color: $demo-white;
+  font-family: $ProductSansRegular;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  text-align: center;
   margin: 0 !important;
 
   @include respond(mobile) {
-    font-family: $LatoLight;
-    font-size: 70px;
+    font-family: $ProductSansRegular;
+    font-size: 24px;
     letter-spacing: 0;
-    line-height: 84px;
+    line-height: 36px;
   }
 }
 
 h2 {
-  color: $amric-black;
-  font-family: $LatoThin;
+  color: $demo-white;
+  font-family: $ProductSansRegular;
   font-size: 73.33px;
   line-height: 88px;
   margin: 0 !important;
 
   @include respond(mobile) {
-    font-family: $LatoLight;
+    font-family: $ProductSansRegular;
     font-size: 46.67px;
     line-height: 56px;
   }
 }
 
 h3 {
-  color: $amric-white;
-  font-family: $LatoThin;
+  color: $demo-white;
+  font-family: $ProductSansRegular;
   font-size: 66.67px;
   line-height: 80px;
   margin: 0 !important;
 
   @include respond(mobile) {
-    font-family: $LatoLight;
+    font-family: $ProductSansRegular;
     font-size: 40.67px;
     line-height: 56px;
   }
 }
 
 h4 {
-  color: $amric-white;
-  font-family: $LatoThin;
+  color: $demo-white;
+  font-family: $ProductSansRegular;
   font-size: 35px;
   line-height: 56px;
   margin: 0 !important;
 
   @include respond(mobile) {
-    font-family: $LatoLight;
+    font-family: $ProductSansRegular;
     font-size: 40px;
     line-height: 48px;
   }
 }
 
 h5 {
-  color: $amric-white;
-  font-family: $LatoThin;
+  color: $demo-white;
+  font-family: $ProductSansRegular;
   font-size: 28px;
   line-height: 48px;
   margin: 0 !important;
 
   @include respond(mobile) {
-    font-family: $LatoLight;
+    font-family: $ProductSansRegular;
     font-size: 20px;
     line-height: 24px;
   }
 }
 
 h6 {
-  color: $amric-white;
-  font-family: $LatoThin;
+  color: $demo-white;
+  font-family: $ProductSansRegular;
   font-size: 20px;
   line-height: 24px;
   margin: 0 !important;
 
   @include respond(mobile) {
-    font-family: $LatoLight;
+    font-family: $ProductSansRegular;
     font-size: 16px;
     line-height: 20px;
   }
 }
 
-p {
-  color: $amric-white;
-  font-family: $LatoRegular;
-  font-size: 16px;
+p, label, input, button {
   margin: 0 !important;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
 
   @include respond(mobile) {
     font-size: 12px;
   }
+}
+
+p {
+  color: $demo-black;
+  font-family: $ProductSansRegular;
+}
+
+label {
+  color: $demo-black;
+  font-family: $ProductSansRegular;
+}
+
+input {
+  color : $demo-light-gray;
+  font-family: $ProductSansBold;
+}
+
+button {
+  color: $demo-white;
+  font-family: $ProductSansBold;
+  background-color: $demo-blue;
+  border: 2px solid $demo-blue;
+}
+
+
+a {
+  text-decoration: none;
 }
