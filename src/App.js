@@ -1,12 +1,10 @@
 import './App.scss';
 import Login from './components/auth/Login';
 
-function App() {
-  return (
+const App = () => (
     <div>
       <Login />
     </div>
-  );
-}
+);
 
 export default App;

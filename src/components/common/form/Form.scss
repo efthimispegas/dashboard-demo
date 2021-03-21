@@ -10,11 +10,28 @@
   padding: 50px 100px;
   width: 50%;
 
+  @include respond(tab-land) {
+    padding: 50px 15px;
+    width: 100%;
+  }
+  @include respond(mobile) {
+    padding: 20px;
+    width: 100%;
+  }
+
   .demo-login-header {
     display: flex;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 75px;
+
+    @include respond(tab-port) {
+      margin-bottom: 50px;
+      margin-top: 0;
+    }
+    @include respond(mobile) {
+      margin-bottom: 25px;
+    }
 
     .demo-login-header-text {
       display: flex;
