@@ -1,0 +1,38 @@
+/*
+ * Styles for Dashboard Header
+ */
+
+ @import '../../../styles/base/mixins';
+ @import '../../../styles/base/palette';
+ @import '../../../styles/base/typography';
+
+.demo-dashboard-header-container {
+  background-color:white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;;
+  padding: 40px 25px 25px 25px;
+  border-bottom: 3px solid $demo-light-black;
+
+  .demo-dashboard-searchbar {
+    // background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    padding: 8px;
+    border: 1px solid $demo-searchbar-border-gray;
+    border-radius: 8px;
+
+    svg {
+      padding-right: 25px;
+    }
+
+    .demo-dashboard-search-text {
+      color: $demo-dark-gray;
+      font-size: 14px;
+    }
+  }
+}
+

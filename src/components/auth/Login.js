@@ -16,6 +16,7 @@ const Login = () => (
       ) : (
         <LoginBackgroundImageMobile />
       )}
+
     </div>
     <div className="demo-login-form">
       <LoginForm />
