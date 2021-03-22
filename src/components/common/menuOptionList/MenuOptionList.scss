@@ -1,0 +1,86 @@
+/*
+ * Styles for Menu Option List
+ */
+
+ @import '../../../styles/base/mixins';
+ @import '../../../styles/base/palette';
+ @import '../../../styles/base/typography';
+
+.demo-menu-header {
+  background-color: $demo-white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 45px 0;
+}
+
+.demo-option-menu-container {
+  width: 100%;
+
+  .demo-option-menu-header {
+    padding-top: 50px;
+    padding-left: 10px;
+  }
+
+  .demo-menu-option {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: row;
+    background-color: $demo-blue;
+    padding: 10px 0 10px 25px;
+
+    svg {
+      margin-right: 15px;
+    }
+
+    .demo-menu-option-text {
+      color: $demo-white;
+      font-size: 14px;
+    }
+  }
+}
+
+
+.demo-registry-menu-container {
+  width: 100%;
+
+  .demo-registry-menu-header {
+    padding-top: 70px;
+    padding-left: 10px;
+  }
+}
+
+.demo-menu-settings-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 25px;
+
+  .demo-menu-settings-header {
+    border-top: 3px solid $demo-light-black;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+}
+
+.option {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0 10px 25px;
+
+  p {
+    font-family: $SFProDisplayRegular;
+    font-size: 14px;
+    color: $demo-light-gray;
+  }
+
+  svg {
+    margin-right: 15px;
+  }
+}

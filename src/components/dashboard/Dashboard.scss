@@ -1,0 +1,39 @@
+/*
+ * Styles for Dashboard
+ */
+
+ @import '../../styles/base/mixins';
+ @import '../../styles/base/palette';
+ @import '../../styles/base/typography';
+
+.demo-dashboard-container {
+  display: flex;
+  flex-direction: row;
+  // background-color:yellowgreen;
+  height: 100vh;
+
+  .demo-main-page-container {
+    background-color:darkcyan;
+
+    .demo-dashboard-header-container {
+      background-color:mediumaquamarine;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .demo-dashboard-categories {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color:mediumvioletred;
+
+      .demo-dashboard-item {
+        background-color: mintcream;
+        margin: 10px;
+      }
+    }
+  }
+}
+
