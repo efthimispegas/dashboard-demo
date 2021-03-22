@@ -2,6 +2,7 @@ import React from 'react';
 import { Formik, Field, Form } from 'formik';
 
 import './Form.scss';
+import { Link } from 'react-router-dom';
 
 const LoginForm = () => (
   <div className="demo-form-container">
@@ -39,10 +40,10 @@ const LoginForm = () => (
           type="password"
         />
         <div className="demo-form-button-container">
-          <button type="submit">Είσοδος</button>
+          <button type="submit"><Link to='/dashboard'>Είσοδος</Link></button>
         </div>
         <div className="demo-form-forgot-password">
-          <a href='#'><p className="demo-form-forgot-password-text">Ξέχασα τον κωδικό μου</p></a>
+          <Link to='/password-forgot'><p className="demo-form-forgot-password-text">Ξέχασα τον κωδικό μου</p></Link>
         </div>
       </Form>
     </Formik>
