@@ -1,0 +1,30 @@
+/*
+ * Styles for Loading Overlay
+ */
+
+ @import '../../styles/base/mixins.scss';
+ @import '../../styles/base/typography.scss';
+ @import '../../styles/base/palette.scss';
+
+ .spinner {
+   > img {
+     height: 25px;
+     padding: 25px;
+
+     @include respond(mobile) {
+       margin-top: 25px;
+       width: 20px;
+     }
+   }
+ }
+
+ .spinner-enabled {
+   display: flex;
+   justify-content: center;
+   // visibility: visible;
+ }
+
+ .spinner-disabled {
+   display: none;
+   // visibility: hidden;
+ }

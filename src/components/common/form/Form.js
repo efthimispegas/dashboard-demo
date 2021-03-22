@@ -1,10 +1,11 @@
 import React from 'react';
 import { Formik, Field, Form } from 'formik';
+import { Link } from 'react-router-dom';
+import LoadingOverlay from '../../loading/LoadingOverlay';
 
 import './Form.scss';
-import { Link } from 'react-router-dom';
 
-const LoginForm = ({ onSubmit }) => (
+const LoginForm = ({ onSubmit, loading }) => (
   <div className="demo-form-container">
     <div className="demo-login-header">
       <h1 className="demo-login-header-text">ΣΥΝΔΕΣΗ</h1>
@@ -37,7 +38,10 @@ const LoginForm = ({ onSubmit }) => (
           type="password"
         />
         <div className="demo-form-button-container">
-          <button type="submit"><Link to='/dashboard'>Είσοδος</Link></button>
+          <button type="submit">Είσοδος</button>
+        </div>
+        <div className="demo-loading-overlay">
+          <LoadingOverlay loading={loading} />
         </div>
         <div className="demo-form-forgot-password">
           <Link to='/password-forgot'><p className="demo-form-forgot-password-text">Ξέχασα τον κωδικό μου</p></Link>
