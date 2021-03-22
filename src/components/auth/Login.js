@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from 'react'
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 import LoginForm from '../common/form/Form'
 import { ReactComponent as LoginBackgroundImageDesktop } from '../../assets/SVG/login-template.svg';
 import { ReactComponent as LoginBackgroundImageMobile } from '../../assets/SVG/login-background-image.svg';
@@ -13,6 +14,7 @@ const [ VIEWPORT_WIDTH, VIEWPORT_HEIGHT ] = port();
 
 const Login = () => {
   const dispatch = useDispatch();
+  const history = useHistory();
 
   let user = useSelector((store) => {
     return store.user.data;
@@ -30,9 +32,9 @@ const Login = () => {
     const { email, password } = values;
     if (!email || !password) {
       alert('Email or password field is empty');
-      console.log(values)
       return;
     }
+
     await new Promise((r) => setTimeout(r, 500)).then(() => {
       user = {
         email: values.email,
@@ -51,6 +53,7 @@ const Login = () => {
     }).finally(() => {
       dispatch(userActions.resetLoading());
       dispatch(loadingActions.resetLoading());
+      history.push('/dashboard');
     });
   };
 
@@ -62,13 +65,10 @@ const Login = () => {
         ) : (
           <LoginBackgroundImageMobile />
         )}
-
       </div>
       <div className="demo-login-form">
-        <LoginForm
-          onSubmit={ onSubmit }
-        />
-      </div>
+        <LoginForm onSubmit={onSubmit} loading={loading} />
+    </div>
     </div>
     );
   };
