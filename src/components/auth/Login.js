@@ -32,6 +32,8 @@ const Login = () => {
     const { email, password } = values;
     if (!email || !password) {
       alert('Email or password field is empty');
+      dispatch(userActions.resetLoading());
+      dispatch(loadingActions.resetLoading());
       return;
     }
 
