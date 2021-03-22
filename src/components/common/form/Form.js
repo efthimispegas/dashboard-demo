@@ -4,7 +4,7 @@ import { Formik, Field, Form } from 'formik';
 import './Form.scss';
 import { Link } from 'react-router-dom';
 
-const LoginForm = () => (
+const LoginForm = ({ onSubmit }) => (
   <div className="demo-form-container">
     <div className="demo-login-header">
       <h1 className="demo-login-header-text">ΣΥΝΔΕΣΗ</h1>
@@ -14,10 +14,7 @@ const LoginForm = () => (
         email: '',
         password: '',
       }}
-      onSubmit={async (values) => {
-        await new Promise((r) => setTimeout(r, 500));
-        alert(JSON.stringify(values, null, 2));
-      }}
+      onSubmit={onSubmit}
     >
       <Form>
         <div>
